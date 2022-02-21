@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Sign Up</title>
+  </head>
+  <body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action="welcome.html">
+      <div>
+        <p>First Name:</p>
+        <input type="text" name="firstName" id="firstName" />
+      </div>
+      <div>
+        <p>Last Name:</p>
+        <input type="text" name="lastName" id="lastName" />
+      </div>
+      <div>
+        <p>Gender</p>
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" />
+        <label for="other">Other</label><br />
+      </div>
+      <div>
+        <p>Nationally</p>
+        <select name="" id="nationality">
+          <option value="Indonesian">Indonesian</option>
+          <option value="Indonesian">American</option>
+          <option value="Indonesian">SIngaporean</option>
+        </select>
+      </div>
+      <div>
+        <p>Language Spoken:</p>
+        <input type="checkbox" id="indonesian" name="language" />
+        <label for="indonesian">Bahasa Indonesia</label><br />
+        <input type="checkbox" id="english" name="language" />
+        <label for="english">English</label><br />
+        <input type="checkbox" id="other" name="language" />
+        <label for="other">Other</label><br />
+      </div>
+      <div>
+        <p>Bio:</p>
+        <textarea name="textarea" id="textarea" cols="30" rows="7"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Sign Up " />
+      </div>
+    </form>
+  </body>
+</html>

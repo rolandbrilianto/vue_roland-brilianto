@@ -56,6 +56,6 @@ berikut hasil praktikumnya
 [praktikum ui ux](https://docs.google.com/document/d/1kiFFmzz8GhWJCJU0cME4y49PhnE1CmZJ/edit?usp=sharing&ouid=101315359720987096596&rtpof=true&sd=true)
 
 berikut tampilannya
-![homepage](screenshots/Curlec - The Recurring Revenue Platform.png)
-![customer page](screenshots/Our Customers - Powered By Curlec.png)
-![about us page](screenshots/About Us - Curlec.png)
+![homepage](screenshots/homepage.png)
+![customer page](screenshots/customers.png)
+![about us page](screenshots/aboutus.png)

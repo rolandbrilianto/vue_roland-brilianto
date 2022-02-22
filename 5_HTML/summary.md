@@ -23,10 +23,10 @@ berikut [hasilnya](praktikum/index.html)
 
 berikut outputnya 
 index
-![outputnya](index.png)
+![outputnya](screenshots/index.png)
 
 form
-![outputnya](form.png)
+![outputnya](screenshots/form.png)
 
 welcome
-![outputnya](welcome.png)
+![outputnya](screenshots/welcome.png)

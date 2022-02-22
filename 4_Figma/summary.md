@@ -21,10 +21,10 @@ harus online saat ingin bekerja. tapi kita bisa menyimpan progressnya di local
 berikut link [figma nya](https://www.figma.com/file/Tx6NLaRUyd2jDHGobYFYRN/Praktikum-Figma?node-id=0%3A1)
 
 dan ini adalah sneak peek dari figma tersebut
-![screenshots](screenshots/screenshot figma full.png)
-![screenshots](screenshots/screenshot figma up.png)
-![screenshots](screenshots/screenshot figma down.png)
+![screenshots](screenshots/screenshot-figma-full.png)
+![screenshots](screenshots/screenshot-figma-up.png)
+![screenshots](screenshots/screenshot-figma-down.png)
 ![screenshots](screenshots/mid.png)
-![screenshots](screenshots/screenshot home.png)
-![screenshots](screenshots/screenshot customer.png)
-![screenshots](screenshots/screenshot about us.png)
+![screenshots](screenshots/screenshot-home.png)
+![screenshots](screenshots/screenshot-customer.png)
+![screenshots](screenshots/screenshot-about-us.png)

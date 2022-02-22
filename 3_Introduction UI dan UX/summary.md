@@ -48,3 +48,14 @@ tujuannya adalah agar mendapat feedback dari user maupun stakeholder sehingga bi
 1. representation
 2. precision
 3. interactivity
+
+# TASK
+1. pada task ui ux diminta mencari desain dengan tema bebas, lalu jabarkan bagian2 pada halaman web tersebut serta menguraikan fitur ui ux serta color pallet nya
+
+berikut hasil praktikumnya 
+[praktikum ui ux](https://docs.google.com/document/d/1kiFFmzz8GhWJCJU0cME4y49PhnE1CmZJ/edit?usp=sharing&ouid=101315359720987096596&rtpof=true&sd=true)
+
+berikut tampilannya
+![homepage](screenshots/Curlec - The Recurring Revenue Platform.png)
+![customer page](screenshots/Our Customers - Powered By Curlec.png)
+![about us page](screenshots/About Us - Curlec.png)

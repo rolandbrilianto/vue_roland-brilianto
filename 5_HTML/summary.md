@@ -19,7 +19,9 @@ Frontend adalah sebuah bagian dari website yang membuat tampilan yang menarik ke
 # TASK
 1. tugas kali ini adalah membuat halaman web html yang nanti akan menavigasi ke form.html lalu ke welcome.html
 
-berikut [hasilnya](praktikum/index.html)
+berikut [hasilnya index](praktikum/index.html)
+[hasilnya form](praktikum/form.html)
+[hasilnya welcome](praktikum/welcome.html)
 
 berikut outputnya 
 index

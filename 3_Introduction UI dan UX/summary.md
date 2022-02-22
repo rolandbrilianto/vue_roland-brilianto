@@ -56,6 +56,9 @@ berikut hasil praktikumnya
 [praktikum ui ux](https://docs.google.com/document/d/1kiFFmzz8GhWJCJU0cME4y49PhnE1CmZJ/edit?usp=sharing&ouid=101315359720987096596&rtpof=true&sd=true)
 
 berikut tampilannya
+home page
 ![homepage](screenshots/homepage.png)
+customer page
 ![customer page](screenshots/customers.png)
+about us
 ![about us page](screenshots/aboutus.png)

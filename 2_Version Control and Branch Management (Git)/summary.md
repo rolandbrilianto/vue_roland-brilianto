@@ -19,5 +19,5 @@ berikut kode dari praktikum ini.
 [index.html](praktikum/index.html)
 
 network insight nya:
-[network insight](screenshots/insight-network.png)
+[network insight](insight-network.png)
 

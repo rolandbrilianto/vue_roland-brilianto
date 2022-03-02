@@ -1,0 +1,25 @@
+.box {
+  background-color: red;
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.kedua {
+  background-color: blue;
+  margin-left: 120px;
+}
+.box-ketiga {
+  width: 350px;
+  height: 350px;
+  background-color: green;
+  text-align: center;
+  border-radius: 15px;
+}
+body {
+  font-family: "Slabo 27px", serif;
+  font-size: 18px;
+  color: white;
+}

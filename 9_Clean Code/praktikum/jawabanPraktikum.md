@@ -2,7 +2,7 @@
 
 ### No 1.
 
-![outputnya](screenshots/ss1.png)
+![outputnya](ss1.png)
 
 #### Berapa Banyak kekurangan dalam penulisan kode tersebut?
 
@@ -29,8 +29,8 @@ menurut saya, berdasarkan karateristik clean code, ada 5 kekurangan dalam kode t
 
 #### Before
 
-![outputnya](screenshots/ss2.png)
+![outputnya](ss2.png)
 
 #### After
 
-![outputnya](screenshots/ss3.png)
+![outputnya](ss3.png)

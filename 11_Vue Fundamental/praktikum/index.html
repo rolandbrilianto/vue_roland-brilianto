@@ -10,7 +10,7 @@
   <body>
     <div id="app">
       <ol>
-        <li v-for="todo in todos">{{todo}}</li>
+        <li v-for="value in todos">{{value}}</li>
       </ol>
       <input type="text" v-model="todo" />
       <input type="submit" value="Tambahkan" @click="TambahToDo" /> <br />

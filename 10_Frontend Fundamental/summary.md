@@ -42,7 +42,7 @@ singkatan dari Node Package Module yang merupakan tool command line yang dapat m
 
 # TASK
 
-untuk tugas kali ini kita diminta untuk membuat css sesuai di ppt ![ini](https://docs.google.com/presentation/d/1hbW-K9OTquu3ZSDMOicF1aZ7pddA4eJe0O1b-5g9Xv8/edit) pada slide ke 62 dan 63
+untuk tugas kali ini kita diminta untuk membuat css sesuai di ppt [ini](https://docs.google.com/presentation/d/1hbW-K9OTquu3ZSDMOicF1aZ7pddA4eJe0O1b-5g9Xv8/edit) pada slide ke 62 dan 63
 
 berikut hasil outputnya
 

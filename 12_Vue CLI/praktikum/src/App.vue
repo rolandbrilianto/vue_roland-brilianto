@@ -20,8 +20,12 @@ export default {
   },
   methods: {
     TambahToDo(todo) {
-      this.todos.push(todo);
-      this.todo = "";
+      if (this.todo === "") {
+        alert("Mohon Masukan Isinya");
+      } else {
+        this.todos.push(todo);
+        this.todo = "";
+      }
     },
   },
 };

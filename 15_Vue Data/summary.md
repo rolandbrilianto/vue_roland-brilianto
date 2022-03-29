@@ -18,7 +18,7 @@ kita diminta melanjutkan tugas kmren sesuai ppt [ini](https://docs.google.com/pr
 
 berikut tugasnya
 
-1. ![link](/praktikum/)
+1. ![link](praktikum/)
 
 dan screenshots nya:
 

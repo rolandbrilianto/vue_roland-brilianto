@@ -6,12 +6,17 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     listNews: [],
-    id: Number,
+    singleNews: [],
   },
   getters: {},
   mutations: {
     setListNews(state, payLoad) {
       state.listNews = payLoad;
+    },
+    setNews(state, payLoad) {
+      // console.log(state.listNews[4]);
+      state.singleNews = state.listNews.find((item, id) => item[id] == payLoad);
+      console.log(state.singleNews);
     },
   },
   actions: {
@@ -20,6 +25,10 @@ export default new Vuex.Store({
         console.log("response", response);
         store.commit("setListNews", response.data.articles);
       });
+    },
+
+    getSingleNews(store, id) {
+      store.commit("setNews", id);
     },
   },
   modules: {},

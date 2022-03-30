@@ -15,6 +15,7 @@
             <div class="user__info">
               <h5>{{ news.author }}</h5>
               <small>{{ news.publishedAt }}</small>
+              <button @click="newsDetail(index)">Selengkapnya</button>
             </div>
           </div>
         </div>
@@ -28,6 +29,14 @@ export default {
   computed: {
     allNews() {
       return this.$store.state.listNews;
+    },
+  },
+  methods: {
+    newsDetail(index) {
+      this.$router.push({
+        name: "singleNews",
+        params: { id: index },
+      });
     },
   },
   mounted() {

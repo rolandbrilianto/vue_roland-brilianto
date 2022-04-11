@@ -1,7 +1,7 @@
 <template>
   <li>
-    <label v-if="!isEdit">
-      {{ todo.list }}
+    <label v-if="!isEdit" @click="nextPage(index)">
+      {{ todo.title }}
     </label>
     <label v-if="isEdit">
       <input type="text" v-model="inputEdit" />
@@ -9,7 +9,7 @@
     <button @click="hapusTodo(index)">Hapus</button>
 
     <button v-if="!isEdit" @click="editTodo">Edit</button>
-    <button v-if="isEdit" @click="updateTodo(index)">Update</button>
+    <button v-if="isEdit" @click="editList(index)">Update</button>
   </li>
 </template>
 <script>
@@ -22,11 +22,11 @@ export default {
     };
   },
   mounted() {
-    this.inputEdit = this.todo.list;
+    this.inputEdit = this.todo.title;
   },
   watch: {
     todo(value) {
-      this.inputEdit = value.list;
+      this.inputEdit = value.title;
     },
   },
   props: {
@@ -40,9 +40,19 @@ export default {
     editTodo() {
       this.isEdit = !this.isEdit;
     },
-    updateTodo(index) {
-      this.$emit("update-todo", index, this.inputEdit);
+    updateTodo() {
+      this.$emit("update-todo", this.inputEdit);
       this.editTodo();
+    },
+    editList(index) {
+      this.updateTodo();
+      this.$emit("edit-todo", index);
+    },
+    nextPage(index) {
+      this.$router.push({
+        name: "detail",
+        params: { index: index },
+      });
     },
   },
 };

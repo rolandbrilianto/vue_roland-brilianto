@@ -1,7 +1,7 @@
 <template>
   <div>
     <ol>
-      <ItemList v-for="(Todo, index) in todoList" :key="index" :todo="Todo" :index="index" @update-todo="updateTodo" @hapus-todo="hapusTodo" />
+      <ItemList v-for="(Todo, index) in todoList" :key="index" :todo="Todo" :index="index" @edit-todo="editTodo" @update-todo="updateTodo" @hapus-todo="hapusTodo" />
     </ol>
     <input type="text" v-model="Todo" />
     <button @click="addTodo()">Tambahkan</button>
@@ -17,42 +17,26 @@ export default {
   data() {
     return {
       Todo: "",
-      todoList: [
-        {
-          list: "halo selamat belajar",
-          edited: 0,
-        },
-
-        {
-          list: "halo selamat belajar",
-          edited: 0,
-        },
-      ],
     };
+  },
+  computed: {
+    todoList() {
+      return this.$store.state.listTodo;
+    },
   },
   methods: {
     addTodo() {
-      if (this.Todo === "") {
-        alert("Harap masukan data");
-      } else {
-        this.todoList.push({ list: this.Todo, edited: 0 });
-        this.Todo = "";
-        alert("Berhasil Memasukan data");
-      }
-      //Maaf kak saya bener2 nge stuck di add sampe ga keurus yang lain
+      this.$store.dispatch("tambahTodo", this.Todo);
+      this.Todo = "";
     },
     hapusTodo(index) {
-      let confirmation = confirm("Are You Sure?");
-      if (confirmation) {
-        this.todoList.splice(index, 1);
-        alert("Data Sucessfully Deleted");
-      } else {
-        alert("Action canceled");
-      }
+      this.$store.dispatch("hapusTodo", index);
     },
-    updateTodo(index, value) {
-      this.todoList[index].list = value;
-      alert("Berhasil mengupdate data");
+    updateTodo(value) {
+      this.$store.dispatch("updateTodo", value);
+    },
+    editTodo(index) {
+      this.$store.dispatch("editTodo", index);
     },
   },
 };

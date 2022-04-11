@@ -1,23 +1,27 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
+import createPersistedState from "vuex-persistedstate";
 Vue.use(Vuex);
-
+const persistedDataState = createPersistedState({
+  paths: ["listNews"],
+});
 export default new Vuex.Store({
+  plugins: [persistedDataState],
   state: {
     listNews: [],
-    singleNews: [],
+    // singleNews: [],
   },
   getters: {},
   mutations: {
     setListNews(state, payLoad) {
       state.listNews = payLoad;
     },
-    setNews(state, payLoad) {
-      // console.log(state.listNews[4]);
-      state.singleNews = state.listNews.find((item, id) => item[id] == payLoad);
-      console.log(state.singleNews);
-    },
+    // setNews(state, payLoad) {
+    //   // console.log(state.listNews[4]);
+    //   state.singleNews = state.listNews.find((item, id) => item[id] == payLoad);
+    //   console.log(state.singleNews);
+    // },
   },
   actions: {
     fetchNews(store) {
@@ -25,10 +29,6 @@ export default new Vuex.Store({
         console.log("response", response);
         store.commit("setListNews", response.data.articles);
       });
-    },
-
-    getSingleNews(store, id) {
-      store.commit("setNews", id);
     },
   },
   modules: {},

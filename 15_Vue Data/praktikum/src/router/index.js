@@ -6,12 +6,12 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/home",
+    path: "",
     name: "home",
     component: NewsView,
   },
   {
-    path: "/news/:id",
+    path: "/news/:title",
     name: "singleNews",
     component: SingleNewsView,
   },

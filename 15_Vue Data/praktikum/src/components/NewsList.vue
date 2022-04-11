@@ -15,7 +15,7 @@
             <div class="user__info">
               <h5>{{ news.author }}</h5>
               <small>{{ news.publishedAt }}</small>
-              <button @click="newsDetail(index)">Selengkapnya</button>
+              <router-link :to="{ name: 'singleNews', params: { title: news.title } }">Detail</router-link>
             </div>
           </div>
         </div>
@@ -32,15 +32,13 @@ export default {
     },
   },
   methods: {
-    newsDetail(index) {
-      this.$router.push({
-        name: "singleNews",
-        params: { id: index },
-      });
+    getNews() {
+      this.$store.dispatch("fetchNews");
     },
   },
   mounted() {
-    this.$store.dispatch("fetchNews");
+    this.getNews();
+    console.log("apakah berita dapat ", this.getNews);
   },
 };
 </script>

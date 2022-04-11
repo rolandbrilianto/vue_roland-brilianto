@@ -3,6 +3,7 @@
     <h1>{{ detailNews.title }}</h1>
     <img :src="detailNews.urlToImage" />
     <p>{{ detailNews.content }}</p>
+    <button><a :href="detailNews.url">Lanjut Baca</a></button>
   </div>
 </template>
 

@@ -13,6 +13,9 @@
 
           <div>{{ singleNews.synopsis }}</div>
         </v-card-text>
+        <v-card-actions>
+          <v-btn :href="singleNews.url" color="orange" text> Read More </v-btn>
+        </v-card-actions>
       </v-card>
     </v-container>
   </div>

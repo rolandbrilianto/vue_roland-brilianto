@@ -1,0 +1,54 @@
+query StatusTrue {
+    kampus_merdeka_keterangan(where: {Status:{_eq: true}}){
+        anggota {
+            nama
+        }
+        Status
+        Pelajaran
+    }
+}
+
+
+mutation MyMutation($objects: [kampus_merdeka_keterangan_insert_input!] = {}) {
+    insert_kampus_merdeka_keterangan(objects: $objects) {
+      returning {
+        id
+        id_anggota
+        Pelajaran
+        Nilai
+        Status
+      }
+    }
+  }
+
+  {
+    "objects":[
+      {
+      "id_anggota": 3,
+      "Pelajaran": "Sistem Informasi",
+      "Nilai": 90,
+      "Status": true
+      },
+      {
+      "id_anggota": 3,
+      "Pelajaran": "React",
+      "Nilai": 55,
+      "Status": false
+      }
+    ]
+     
+  }
+  
+  mutation UpdateStatus {
+    update_kampus_merdeka_keterangan(_set: {Status: true}, where: {Status: {_eq: false}}) {
+      returning {
+        id
+        id_anggota
+        Nilai
+        Pelajaran
+        Status
+      }
+    }
+  }
+
+  

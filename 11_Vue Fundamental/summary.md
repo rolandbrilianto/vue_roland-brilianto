@@ -60,5 +60,5 @@ untuk tugas kali ini kita disuruh meniru input yang ada di ppt [ini](https://doc
 
 berikut screenshotnya:
 
-1. ![ini](screenshots/1.png)
-2. ![ini](screenshots/2.png)
+1. ![ini](screenshots/fff.png)
+2. ![ini](screenshots/gvv.png)

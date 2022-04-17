@@ -29,6 +29,7 @@ untuk tugas, kita diminta untuk membuat project nuxt dengan patokan seperti [ini
 hasil praktikum:
 
 1. [Praktikum](praktikum/)
+2. [link](https://section19-nuxt-roland.netlify.app/)
 
 screenshots:
 

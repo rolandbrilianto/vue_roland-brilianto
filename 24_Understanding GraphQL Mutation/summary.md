@@ -60,5 +60,5 @@ Tugas kali ini kita diminta membuat mutation insert todo,update, dan delete, det
 
 - dan ini screenshotsnya:
 
-1. ![](screenshots/todoInput.jpg.png)
-1. ![](screenshots/todoEdit.png.png)
+1. ![](screenshots/todoInput.jpg)
+2. ![](screenshots/todoEdit.png)

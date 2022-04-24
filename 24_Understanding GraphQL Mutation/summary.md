@@ -1,4 +1,4 @@
-# (23) Understanding GraphQL Mutation
+# (24) Understanding GraphQL Mutation
 
 ## Mutation
 
